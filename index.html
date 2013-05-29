@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+var flag =1;
+
+
+function popuphnadler () {
+	element=document.getElementById('popup');
+    if (flag){
+		element.style.visibility="visible";
+		flag=0;
+	} else{
+		element.style.visibility="hidden";
+		flag=1;
+	}	
+}
+	</script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<img id="imgleft" src="Slices/WSOP_logo.png">
+			<p id="HeaderText">WSOP® - The Official Online Poker Site</p>
+			<img id="imgright" src="Slices/BritishFlag.png">
+		</header>
+				<img  id="belt" src="Slices/braceletMainImage.jpg" >
+			
+				<p id="ttext">Get £20 Instant Deposit Bonus</p>
+				<p id="btext">Plus 150% bonus up to £500</p>
+				<a class="bth"></a>
+		<footer>
+			<img  id="Slogo" src="Slices/IGC_Logoe.png" >
+			<img  id="Nlogo" src="Slices/NoSpywareAdware_Logo.png" >
+			<a href="http://www.gapminder.org"><img  id="Dlogo" src="Slices/DragonFish_Logo.png" ></a>
+			<div id="popupcontroller" onClick="popuphnadler()"  height="200" width="200" >
+    			<p id="popcontroller">World Series of Poker Online - Home to the Most Trusted Name in Online Poker - WSOP</p> 
+			</div>
+			<div id="popup" height="50" width="50" style=" visibility:hidden;" >
+     			<p id="pop">The World Series of Poker (WSOP) is the most trusted name in poker in the world. The WSOP offers many touch points for those interested in poker and online poker. WSOP is now online in UK. WSOP Online Poker is the world's online poker authority offering the opportunity to play online poker games including: poker tournaments, WSOP satellites, cash and play for fun games. With WSOP online you always will be connected to the game with the latest poker news, player information, historical results and live tournament coverage.</p>
+
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
